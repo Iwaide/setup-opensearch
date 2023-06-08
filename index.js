@@ -89,6 +89,7 @@ function download() {
     // fix for: cross-device link not permitted
     run('mv', `opensearch-${opensearchVersion}`, opensearchHome)
   } else {
+    console.log('rename')
     fs.renameSync(`opensearch-${opensearchVersion}`, opensearchHome);
   }
 }
