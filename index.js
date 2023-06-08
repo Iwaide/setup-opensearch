@@ -87,7 +87,6 @@ function download() {
   }
   if (isWindows()) {
     // fix for: cross-device link not permitted
-    // Test
     run('mv', `opensearch-${opensearchVersion}`, opensearchHome)
   } else {
     fs.renameSync(`opensearch-${opensearchVersion}`, opensearchHome);
